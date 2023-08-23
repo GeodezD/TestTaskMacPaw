@@ -9,21 +9,53 @@
 /* Begin PBXBuildFile section */
 		A16CE7092A9488E3000866CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CE7082A9488E3000866CA /* AppDelegate.swift */; };
 		A16CE70B2A9488E3000866CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CE70A2A9488E3000866CA /* SceneDelegate.swift */; };
-		A16CE70D2A9488E3000866CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CE70C2A9488E3000866CA /* ViewController.swift */; };
+		A16CE70D2A9488E3000866CA /* AllStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CE70C2A9488E3000866CA /* AllStatistics.swift */; };
 		A16CE7102A9488E3000866CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16CE70E2A9488E3000866CA /* Main.storyboard */; };
 		A16CE7122A9488E5000866CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16CE7112A9488E5000866CA /* Assets.xcassets */; };
 		A16CE7152A9488E5000866CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16CE7132A9488E5000866CA /* LaunchScreen.storyboard */; };
+		A16CE7202A948BA7000866CA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CE71F2A948BA7000866CA /* NetworkManager.swift */; };
+		A16CE7232A948D3B000866CA /* RussiaLossesPersonnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CE7222A948D3B000866CA /* RussiaLossesPersonnel.swift */; };
+		A16CE7252A94A63A000866CA /* RussiaLossesEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CE7242A94A63A000866CA /* RussiaLossesEquipment.swift */; };
+		A1BBED572A94E8D900125BB5 /* RussiaLossesEquipmentCorrection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED562A94E8D900125BB5 /* RussiaLossesEquipmentCorrection.swift */; };
+		A1BBED592A94E8E800125BB5 /* RussiaLossesEquipmentOryx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED582A94E8E800125BB5 /* RussiaLossesEquipmentOryx.swift */; };
+		A1BBED5C2A94EFD800125BB5 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED5B2A94EFD800125BB5 /* CollectionView.swift */; };
+		A1BBED642A94F25300125BB5 /* DataAndDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED622A94F25300125BB5 /* DataAndDayCollectionViewCell.swift */; };
+		A1BBED652A94F25300125BB5 /* DataAndDayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BBED632A94F25300125BB5 /* DataAndDayCollectionViewCell.xib */; };
+		A1BBED682A94F59100125BB5 /* AllStatistic + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED672A94F59100125BB5 /* AllStatistic + extension.swift */; };
+		A1BBED6A2A95063600125BB5 /* StatisticForOneDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED692A95063600125BB5 /* StatisticForOneDay.swift */; };
+		A1BBED6E2A95093F00125BB5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED6D2A95093F00125BB5 /* Color.swift */; };
+		A1BBED702A95159100125BB5 /* StatisticForOneDay + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED6F2A95159100125BB5 /* StatisticForOneDay + extension.swift */; };
+		A1BBED732A95322000125BB5 /* ImageAndTextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED712A95322000125BB5 /* ImageAndTextCollectionViewCell.swift */; };
+		A1BBED742A95322000125BB5 /* ImageAndTextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BBED722A95322000125BB5 /* ImageAndTextCollectionViewCell.xib */; };
+		A1BBED762A960B2200125BB5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED752A960B2200125BB5 /* MainViewController.swift */; };
+		A1BBED782A9669B100125BB5 /* TemporaryFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED772A9669B100125BB5 /* TemporaryFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A16CE7052A9488E3000866CA /* TestTaskMacPaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskMacPaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16CE7082A9488E3000866CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A16CE70A2A9488E3000866CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A16CE70C2A9488E3000866CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A16CE70C2A9488E3000866CA /* AllStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStatistics.swift; sourceTree = "<group>"; };
 		A16CE70F2A9488E3000866CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A16CE7112A9488E5000866CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A16CE7142A9488E5000866CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A16CE7162A9488E5000866CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A16CE71F2A948BA7000866CA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A16CE7222A948D3B000866CA /* RussiaLossesPersonnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RussiaLossesPersonnel.swift; sourceTree = "<group>"; };
+		A16CE7242A94A63A000866CA /* RussiaLossesEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RussiaLossesEquipment.swift; sourceTree = "<group>"; };
+		A1BBED562A94E8D900125BB5 /* RussiaLossesEquipmentCorrection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RussiaLossesEquipmentCorrection.swift; sourceTree = "<group>"; };
+		A1BBED582A94E8E800125BB5 /* RussiaLossesEquipmentOryx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RussiaLossesEquipmentOryx.swift; sourceTree = "<group>"; };
+		A1BBED5B2A94EFD800125BB5 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		A1BBED622A94F25300125BB5 /* DataAndDayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAndDayCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1BBED632A94F25300125BB5 /* DataAndDayCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataAndDayCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1BBED672A94F59100125BB5 /* AllStatistic + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AllStatistic + extension.swift"; sourceTree = "<group>"; };
+		A1BBED692A95063600125BB5 /* StatisticForOneDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticForOneDay.swift; sourceTree = "<group>"; };
+		A1BBED6D2A95093F00125BB5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A1BBED6F2A95159100125BB5 /* StatisticForOneDay + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatisticForOneDay + extension.swift"; sourceTree = "<group>"; };
+		A1BBED712A95322000125BB5 /* ImageAndTextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAndTextCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1BBED722A95322000125BB5 /* ImageAndTextCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageAndTextCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1BBED752A960B2200125BB5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A1BBED772A9669B100125BB5 /* TemporaryFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +88,87 @@
 		A16CE7072A9488E3000866CA /* TestTaskMacPaw */ = {
 			isa = PBXGroup;
 			children = (
+				A1BBED772A9669B100125BB5 /* TemporaryFile.swift */,
+				A1BBED5A2A94EFC600125BB5 /* Views */,
+				A16CE71D2A948B77000866CA /* ViewControllers */,
+				A1BBED662A94F56100125BB5 /* Extension */,
+				A16CE71E2A948B84000866CA /* NetworkManager */,
+				A16CE7212A948D29000866CA /* Models */,
+				A16CE71C2A948B69000866CA /* Resource */,
+				A16CE7162A9488E5000866CA /* Info.plist */,
+				A1BBED6D2A95093F00125BB5 /* Color.swift */,
+			);
+			path = TestTaskMacPaw;
+			sourceTree = "<group>";
+		};
+		A16CE71C2A948B69000866CA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
 				A16CE7082A9488E3000866CA /* AppDelegate.swift */,
 				A16CE70A2A9488E3000866CA /* SceneDelegate.swift */,
-				A16CE70C2A9488E3000866CA /* ViewController.swift */,
 				A16CE70E2A9488E3000866CA /* Main.storyboard */,
 				A16CE7112A9488E5000866CA /* Assets.xcassets */,
 				A16CE7132A9488E5000866CA /* LaunchScreen.storyboard */,
-				A16CE7162A9488E5000866CA /* Info.plist */,
 			);
-			path = TestTaskMacPaw;
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A16CE71D2A948B77000866CA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1BBED752A960B2200125BB5 /* MainViewController.swift */,
+				A16CE70C2A9488E3000866CA /* AllStatistics.swift */,
+				A1BBED692A95063600125BB5 /* StatisticForOneDay.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A16CE71E2A948B84000866CA /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				A16CE71F2A948BA7000866CA /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		A16CE7212A948D29000866CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A16CE7222A948D3B000866CA /* RussiaLossesPersonnel.swift */,
+				A16CE7242A94A63A000866CA /* RussiaLossesEquipment.swift */,
+				A1BBED562A94E8D900125BB5 /* RussiaLossesEquipmentCorrection.swift */,
+				A1BBED582A94E8E800125BB5 /* RussiaLossesEquipmentOryx.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1BBED5A2A94EFC600125BB5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1BBED5B2A94EFD800125BB5 /* CollectionView.swift */,
+				A1BBED612A94F0ED00125BB5 /* CollectionViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A1BBED612A94F0ED00125BB5 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1BBED622A94F25300125BB5 /* DataAndDayCollectionViewCell.swift */,
+				A1BBED632A94F25300125BB5 /* DataAndDayCollectionViewCell.xib */,
+				A1BBED712A95322000125BB5 /* ImageAndTextCollectionViewCell.swift */,
+				A1BBED722A95322000125BB5 /* ImageAndTextCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		A1BBED662A94F56100125BB5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A1BBED672A94F59100125BB5 /* AllStatistic + extension.swift */,
+				A1BBED6F2A95159100125BB5 /* StatisticForOneDay + extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +231,8 @@
 			files = (
 				A16CE7152A9488E5000866CA /* LaunchScreen.storyboard in Resources */,
 				A16CE7122A9488E5000866CA /* Assets.xcassets in Resources */,
+				A1BBED742A95322000125BB5 /* ImageAndTextCollectionViewCell.xib in Resources */,
+				A1BBED652A94F25300125BB5 /* DataAndDayCollectionViewCell.xib in Resources */,
 				A16CE7102A9488E3000866CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +244,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A16CE70D2A9488E3000866CA /* ViewController.swift in Sources */,
+				A1BBED5C2A94EFD800125BB5 /* CollectionView.swift in Sources */,
+				A1BBED682A94F59100125BB5 /* AllStatistic + extension.swift in Sources */,
+				A1BBED642A94F25300125BB5 /* DataAndDayCollectionViewCell.swift in Sources */,
+				A16CE7202A948BA7000866CA /* NetworkManager.swift in Sources */,
+				A1BBED6E2A95093F00125BB5 /* Color.swift in Sources */,
+				A1BBED572A94E8D900125BB5 /* RussiaLossesEquipmentCorrection.swift in Sources */,
+				A1BBED702A95159100125BB5 /* StatisticForOneDay + extension.swift in Sources */,
+				A1BBED762A960B2200125BB5 /* MainViewController.swift in Sources */,
+				A16CE70D2A9488E3000866CA /* AllStatistics.swift in Sources */,
+				A1BBED6A2A95063600125BB5 /* StatisticForOneDay.swift in Sources */,
+				A16CE7232A948D3B000866CA /* RussiaLossesPersonnel.swift in Sources */,
 				A16CE7092A9488E3000866CA /* AppDelegate.swift in Sources */,
+				A16CE7252A94A63A000866CA /* RussiaLossesEquipment.swift in Sources */,
 				A16CE70B2A9488E3000866CA /* SceneDelegate.swift in Sources */,
+				A1BBED592A94E8E800125BB5 /* RussiaLossesEquipmentOryx.swift in Sources */,
+				A1BBED732A95322000125BB5 /* ImageAndTextCollectionViewCell.swift in Sources */,
+				A1BBED782A9669B100125BB5 /* TemporaryFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

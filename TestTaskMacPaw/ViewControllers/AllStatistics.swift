@@ -11,11 +11,13 @@ class AllStatistics: UIViewController {
     
     private let collectionView = CollectionView(frame: .zero, collectionViewLayout: .init()).setupCollectionView()
     let semaphore = DispatchSemaphore(value: 0)
-    var data: [RussiaLossesEquipment]?
+    var dataEquipment: [RussiaLossesEquipment]?
+    var dataPersonnel: [RussiaLossesPersonnel]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        takeData()
+        takeDataEquipment()
+        takeDataPersonnel()
         setup()
     }
     
@@ -47,14 +49,20 @@ class AllStatistics: UIViewController {
         ])
     }
     
-    func takeData() {
+    func takeDataEquipment() {
         NetworkManager().fetchPage(str: Url.russiaLossesEquipment.rawValue) { data in
             let decodeData = NetworkManager().decodeData(data, into: [RussiaLossesEquipment].self)
-            self.data = decodeData?.reversed()
-            print(data)
+            self.dataEquipment = decodeData?.reversed()
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
             }
+        }
+    }
+
+    func takeDataPersonnel() {
+        NetworkManager().fetchPage(str: Url.russiaLossesPersonnel.rawValue) { data in
+            let decode = NetworkManager().decodeData(data, into: [RussiaLossesPersonnel].self)
+            self.dataPersonnel = decode?.reversed()
         }
     }
 }

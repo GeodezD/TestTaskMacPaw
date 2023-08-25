@@ -10,8 +10,8 @@ import UIKit
 extension AllStatistics: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if let data {
-            return data.count
+        if let dataEquipment {
+            return dataEquipment.count
         }
         return 0
     }
@@ -19,10 +19,11 @@ extension AllStatistics: UICollectionViewDelegate, UICollectionViewDataSource, U
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DataAndDayCollectionViewCell", for: indexPath) as? DataAndDayCollectionViewCell
         guard let cell else {fatalError()}
-        if let data  {
+        
+        if let dataEquipment  {
             cell.setLabel(with: "Statistics for", label: cell.labelStatisttic, font: 16, bold: false)
-            cell.setLabel(with: "Date: \(data[indexPath.item].date)", label: cell.labelDate, font: 18, bold: false)
-            cell.setLabel(with: "Day: \(data[indexPath.item].day)", label: cell.labelDays, font: 25, bold: true)
+            cell.setLabel(with: "Date: \(dataEquipment[indexPath.item].date)", label: cell.labelDate, font: 18, bold: false)
+            cell.setLabel(with: "Day: \(dataEquipment[indexPath.item].day)", label: cell.labelDays, font: 25, bold: true)
             let selectedColor: MyColors = .colorCell
             cell.backgroundColor = selectedColor.color
             return  cell
@@ -32,9 +33,36 @@ extension AllStatistics: UICollectionViewDelegate, UICollectionViewDataSource, U
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let nextPage = StatisticForOneDay()
-        if let data  {
-            nextPage.dataStatisticForOneDay  = data[indexPath.item]
+        var setOptionalWithOptionalProperty: Set<String> = []
+        
+        if let dataPersonnel {
+            nextPage.dataStatisticForOneDayPersonnel = dataPersonnel[indexPath.item]
         }
+        
+        if let dataEquipment  {
+            nextPage.dataStatisticForOneDayEquipment = dataEquipment[indexPath.item]
+            
+            for (key, _) in dataEquipment[indexPath.item].returnDataArray() {
+                if key != "day" && key != "date" {
+                    nextPage.keysArrayDataDictionaryEquipment.append(key)
+                }
+                
+                for keySet in dataEquipment[indexPath.item].optionalSet {
+                    if key == keySet {
+                        setOptionalWithOptionalProperty.insert(key)
+                    }
+                }
+            }
+            
+            let setWithNil = dataEquipment[indexPath.item].optionalSet.symmetricDifference(setOptionalWithOptionalProperty)
+            nextPage.dataDictionaryEquipment = dataEquipment[indexPath.item].returnDataArray()
+            
+            for element in setWithNil {
+                nextPage.dataDictionaryEquipment[element] = nil
+            }
+            
+        }
+        
         present(nextPage, animated: true)
     }
     

@@ -29,6 +29,7 @@
 		A1BBED742A95322000125BB5 /* ImageAndTextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BBED722A95322000125BB5 /* ImageAndTextCollectionViewCell.xib */; };
 		A1BBED762A960B2200125BB5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED752A960B2200125BB5 /* MainViewController.swift */; };
 		A1BBED782A9669B100125BB5 /* TemporaryFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED772A9669B100125BB5 /* TemporaryFile.swift */; };
+		A1F02BA42A98D42B003053FA /* MainViewController + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F02BA32A98D42B003053FA /* MainViewController + extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		A1BBED722A95322000125BB5 /* ImageAndTextCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageAndTextCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1BBED752A960B2200125BB5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A1BBED772A9669B100125BB5 /* TemporaryFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryFile.swift; sourceTree = "<group>"; };
+		A1F02BA32A98D42B003053FA /* MainViewController + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController + extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			children = (
 				A1BBED672A94F59100125BB5 /* AllStatistic + extension.swift */,
 				A1BBED6F2A95159100125BB5 /* StatisticForOneDay + extension.swift */,
+				A1F02BA32A98D42B003053FA /* MainViewController + extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				A16CE7202A948BA7000866CA /* NetworkManager.swift in Sources */,
 				A1BBED6E2A95093F00125BB5 /* Color.swift in Sources */,
 				A1BBED572A94E8D900125BB5 /* RussiaLossesEquipmentCorrection.swift in Sources */,
+				A1F02BA42A98D42B003053FA /* MainViewController + extension.swift in Sources */,
 				A1BBED702A95159100125BB5 /* StatisticForOneDay + extension.swift in Sources */,
 				A1BBED762A960B2200125BB5 /* MainViewController.swift in Sources */,
 				A16CE70D2A9488E3000866CA /* AllStatistics.swift in Sources */,

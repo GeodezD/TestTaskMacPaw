@@ -16,11 +16,19 @@ struct RussiaLossesEquipment: Codable {
     let apc: Int
     let fieldArtillery: Int
     let mrl: Int
-    let militaryAuto: Int?
-    let fuelTank: Int?
     let drone: Int
     let navalShip: Int
     let antiAircraftWarfare: Int
+
+    let militaryAuto: Int?
+    let fuelTank: Int?
+    let mobileSRBMSystem: Int?
+    let vehiclesAndFuelTanks: Int?
+    let cruiseMissiles: Int?
+    let directionOfGreatestLosses: String?
+    let specialEquipment: Int?
+    
+    let optionalSet: Set = ["militaryAuto", "fuelTank", "mobileSRBMSystem", "vehiclesAndFuelTanks", "cruiseMissiles", "directionOfGreatestLosses", "specialEquipment"]
     
     enum CodingKeys: String, CodingKey {
         case date, day, aircraft, helicopter, tank, drone
@@ -31,27 +39,45 @@ struct RussiaLossesEquipment: Codable {
         case antiAircraftWarfare = "anti-aircraft warfare"
         case apc = "APC"
         case mrl = "MRL"
+        case mobileSRBMSystem = "mobile SRBM System"
+        case vehiclesAndFuelTanks = "vehicles and fuel tanks"
+        case cruiseMissiles = "cruise missiles"
+        case directionOfGreatestLosses  = "greatest losses direction"
+        case specialEquipment = "special equipment"
+        
     }
     
-    func someNil() -> Int {
-        return 12
+    func GettingTheNumberOfElements() -> Int {
+        return returnDataArray().count
+    }
+    
+    func returnDataArray() -> [String : Any] {
+        let dataDictionary: [String : Any?] = ["date" : date,
+                                          "day" : day,
+                                          "aircraft" : aircraft,
+                                          "helicopter" : helicopter,
+                                          "tank" : tank,
+                                          "apc" : apc,
+                                          "fieldArtillery" : fieldArtillery,
+                                          "mrl" : mrl,
+                                          "drone" : drone,
+                                          "navalShip" : navalShip,
+                                          "antiAircraftWarfare" : antiAircraftWarfare,
+                                          "militaryAuto" : militaryAuto,
+                                          "fuelTank" : fuelTank,
+                                          "mobileSRBMSystem" : mobileSRBMSystem,
+                                          "vehiclesAndFuelTanks" : vehiclesAndFuelTanks,
+                                          "cruiseMissiles" : cruiseMissiles,
+                                          "directionOfGreatestLosses" : directionOfGreatestLosses,
+                                          "specialEquipment" : specialEquipment]
+        
+        var nonNilDataDictionary: [String : Any] = [ : ]
+        for (key, value) in dataDictionary {
+            if value != nil {
+                nonNilDataDictionary[key] = value
+            }
+        }
+        return nonNilDataDictionary
     }
 }
-/*
- [
- {
- "date": "2022-02-25",
- "day": 2,
- "aircraft": 10,
- "helicopter": 7,
- "tank": 80,
- "APC": 516,
- "field artillery": 49,
- "MRL": 4,
- "military auto": 100,
- "fuel tank": 60,
- "drone": 0,
- "naval ship": 2,
- "anti-aircraft warfare": 0
- },
- */
+

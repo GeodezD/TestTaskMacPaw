@@ -7,21 +7,34 @@
 
 import UIKit
 
-enum Url: String {
-    case russiaLossesPersonnel = "https://raw.githubusercontent.com/PetroIvaniuk/2022-Ukraine-Russia-War-Dataset/main/data/russia_losses_personnel.json"
-    case russiaLossesEquipment = "https://raw.githubusercontent.com/PetroIvaniuk/2022-Ukraine-Russia-War-Dataset/main/data/russia_losses_equipment.json"
-    case russiaLossesEquipmentCorrection = "https://raw.githubusercontent.com/PetroIvaniuk/2022-Ukraine-Russia-War-Dataset/main/data/russia_losses_equipment_correction.json"
-    case russiaLossesEquipmentOryx = "https://raw.githubusercontent.com/PetroIvaniuk/2022-Ukraine-Russia-War-Dataset/main/data/russia_losses_equipment_oryx.json"
+enum Url {
+    case russiaLossesPersonnel
+    case russiaLossesEquipment
+    case russiaLossesEquipmentCorrection
+    case russiaLossesEquipmentOryx
+    
+    var url: String {
+        switch self {
+        case .russiaLossesPersonnel:
+            return "https://raw.githubusercontent.com/PetroIvaniuk/2022-Ukraine-Russia-War-Dataset/main/data/russia_losses_personnel.json"
+        case .russiaLossesEquipment:
+            return "https://raw.githubusercontent.com/PetroIvaniuk/2022-Ukraine-Russia-War-Dataset/main/data/russia_losses_equipment.json"
+        case .russiaLossesEquipmentCorrection:
+            return "https://raw.githubusercontent.com/PetroIvaniuk/2022-Ukraine-Russia-War-Dataset/main/data/russia_losses_equipment_correction.json"
+        case .russiaLossesEquipmentOryx:
+            return "https://raw.githubusercontent.com/PetroIvaniuk/2022-Ukraine-Russia-War-Dataset/main/data/russia_losses_equipment_oryx.json"
+        }
+    }
 }
 
 final class NetworkManager {
     
-    func fetchPage(str: String, completion: @escaping ((Data) -> Void)) {
+    func fetchPage(str: Url, completion: @escaping ((Data?, Error?) -> Void)) {
         let sessionConfig = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfig,
                                  delegate: nil,
                                  delegateQueue: nil)
-        guard let url = URL(string: str) else { fatalError() }
+        guard let url = URL(string: str.url) else { fatalError() }
         var request = URLRequest(url: url,  cachePolicy: .returnCacheDataElseLoad, timeoutInterval: 60)
         request.httpMethod = "GET"
         let serialQueue = DispatchQueue(label: "Network", attributes: .concurrent)
@@ -29,9 +42,10 @@ final class NetworkManager {
             let task = session.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
                 if error != nil {
                     print("error")
+                    completion(nil, error)
                 }
                 guard let data = data else { return }
-                completion(data)
+                completion(data, nil)
             }
             task.resume()
             session.finishTasksAndInvalidate()
@@ -49,5 +63,4 @@ final class NetworkManager {
             return nil
         }
     }
-    
 }

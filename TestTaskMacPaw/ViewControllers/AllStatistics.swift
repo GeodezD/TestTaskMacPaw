@@ -7,61 +7,58 @@
 
 import UIKit
 
-class AllStatistics: UIViewController {
+final class AllStatistics: ViewController {
     
-    private let collectionView = CollectionView(frame: .zero, collectionViewLayout: .init()).setupCollectionView()
-    let semaphore = DispatchSemaphore(value: 0)
-    var data: [RussiaLossesEquipment]?
+    var dataEquipment: [RussiaLossesEquipment]?
+    var dataPersonnel: [RussiaLossesPersonnel]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        takeData()
-        setup()
+        takeDataEquipment()
+        takeDataPersonnel()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        setupConstraints()
     }
     
-    func setup() {
-        let selectedColor: MyColors = .superViewBackgroundColor
-        view.backgroundColor = selectedColor.color
+    override func setup() {
+        super.setup()
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        
-        view.addSubview(collectionView)
     }
     
-    func setupConstraints() {
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            
-            collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 0),
-            collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
-            collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 0),
-            collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0),
-            
-        ])
+    override func setupConstraints() {
+        super.setupConstraints()
     }
     
-    func takeData() {
-        NetworkManager().fetchPage(str: Url.russiaLossesEquipment.rawValue) { data in
-            let decodeData = NetworkManager().decodeData(data, into: [RussiaLossesEquipment].self)
-            self.data = decodeData?.reversed()
-            print(data)
-            DispatchQueue.main.async {
-                self.collectionView.reloadData()
+    override func showAlert(message: String) {
+        super.showAlert(message: message)
+    }
+    
+    func takeDataEquipment() {
+        NetworkManager().fetchPage(str: .russiaLossesEquipment) { (data, error) in
+            if let data {
+                let decodeData = NetworkManager().decodeData(data, into: [RussiaLossesEquipment].self)
+                self.dataEquipment = decodeData?.reversed()
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+            } else {
+                self.showAlert(message: "No internet connection")
+            }
+        }
+    }
+    
+    func takeDataPersonnel() {
+        NetworkManager().fetchPage(str: .russiaLossesPersonnel) { (data, error) in
+            if let data {
+                let decode = NetworkManager().decodeData(data, into: [RussiaLossesPersonnel].self)
+                self.dataPersonnel = decode?.reversed()
+            } else {
+                self.showAlert(message: "No internet connection")
             }
         }
     }
 }
-
-/*
- RussiaLossesPersonnel
- RussiaLossesEquipment
- RussiaLossesEquipmentCorrection
- RussiaLossesEquipmentOryx
- */

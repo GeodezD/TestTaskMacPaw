@@ -14,9 +14,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        let navigationController = UINavigationController(rootViewController: AllStatistics())
+        let navigationController = UINavigationController(rootViewController: MainViewController())
         window?.rootViewController = navigationController
-        navigationController.setNavigationBarHidden(true, animated: true)
+        
+//        window?.rootViewController = UINavigationController(
+//            rootViewController: MainViewController()
+//        )
+        
+        navigationController.setNavigationBarHidden(false, animated: true)
         window?.makeKeyAndVisible()
         let selectedColor: MyColors = .superViewBackgroundColor
         window?.backgroundColor = selectedColor.color

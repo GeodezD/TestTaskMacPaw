@@ -23,13 +23,18 @@
 		A1BBED652A94F25300125BB5 /* DataAndDayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BBED632A94F25300125BB5 /* DataAndDayCollectionViewCell.xib */; };
 		A1BBED682A94F59100125BB5 /* AllStatistic + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED672A94F59100125BB5 /* AllStatistic + extension.swift */; };
 		A1BBED6A2A95063600125BB5 /* StatisticForOneDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED692A95063600125BB5 /* StatisticForOneDay.swift */; };
-		A1BBED6E2A95093F00125BB5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED6D2A95093F00125BB5 /* Color.swift */; };
 		A1BBED702A95159100125BB5 /* StatisticForOneDay + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED6F2A95159100125BB5 /* StatisticForOneDay + extension.swift */; };
 		A1BBED732A95322000125BB5 /* ImageAndTextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED712A95322000125BB5 /* ImageAndTextCollectionViewCell.swift */; };
 		A1BBED742A95322000125BB5 /* ImageAndTextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BBED722A95322000125BB5 /* ImageAndTextCollectionViewCell.xib */; };
 		A1BBED762A960B2200125BB5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED752A960B2200125BB5 /* MainViewController.swift */; };
 		A1BBED782A9669B100125BB5 /* TemporaryFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED772A9669B100125BB5 /* TemporaryFile.swift */; };
 		A1F02BA42A98D42B003053FA /* MainViewController + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F02BA32A98D42B003053FA /* MainViewController + extension.swift */; };
+		A1F02BA62A98DCCB003053FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F02BA52A98DCCB003053FA /* ViewController.swift */; };
+		A1F02BAA2A991FD3003053FA /* MilitaryEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F02BA92A991FD3003053FA /* MilitaryEquipment.swift */; };
+		A1F02BAC2A9920CE003053FA /* MilitaryEquipment + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F02BAB2A9920CE003053FA /* MilitaryEquipment + extension.swift */; };
+		A1F02BB12A9922D1003053FA /* FiveLabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F02BAF2A9922D1003053FA /* FiveLabelCollectionViewCell.swift */; };
+		A1F02BB22A9922D1003053FA /* FiveLabelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F02BB02A9922D1003053FA /* FiveLabelCollectionViewCell.xib */; };
+		A1F02BB52A9A2B0F003053FA /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F02BB42A9A2B0F003053FA /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,13 +56,18 @@
 		A1BBED632A94F25300125BB5 /* DataAndDayCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataAndDayCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1BBED672A94F59100125BB5 /* AllStatistic + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AllStatistic + extension.swift"; sourceTree = "<group>"; };
 		A1BBED692A95063600125BB5 /* StatisticForOneDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticForOneDay.swift; sourceTree = "<group>"; };
-		A1BBED6D2A95093F00125BB5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		A1BBED6F2A95159100125BB5 /* StatisticForOneDay + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatisticForOneDay + extension.swift"; sourceTree = "<group>"; };
 		A1BBED712A95322000125BB5 /* ImageAndTextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAndTextCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1BBED722A95322000125BB5 /* ImageAndTextCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageAndTextCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1BBED752A960B2200125BB5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A1BBED772A9669B100125BB5 /* TemporaryFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryFile.swift; sourceTree = "<group>"; };
 		A1F02BA32A98D42B003053FA /* MainViewController + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController + extension.swift"; sourceTree = "<group>"; };
+		A1F02BA52A98DCCB003053FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1F02BA92A991FD3003053FA /* MilitaryEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilitaryEquipment.swift; sourceTree = "<group>"; };
+		A1F02BAB2A9920CE003053FA /* MilitaryEquipment + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MilitaryEquipment + extension.swift"; sourceTree = "<group>"; };
+		A1F02BAF2A9922D1003053FA /* FiveLabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveLabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1F02BB02A9922D1003053FA /* FiveLabelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiveLabelCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1F02BB42A9A2B0F003053FA /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				A1BBED772A9669B100125BB5 /* TemporaryFile.swift */,
+				A1F02BB32A9A2AFB003053FA /* Enums */,
 				A1BBED5A2A94EFC600125BB5 /* Views */,
 				A16CE71D2A948B77000866CA /* ViewControllers */,
 				A1BBED662A94F56100125BB5 /* Extension */,
@@ -98,7 +109,6 @@
 				A16CE7212A948D29000866CA /* Models */,
 				A16CE71C2A948B69000866CA /* Resource */,
 				A16CE7162A9488E5000866CA /* Info.plist */,
-				A1BBED6D2A95093F00125BB5 /* Color.swift */,
 			);
 			path = TestTaskMacPaw;
 			sourceTree = "<group>";
@@ -118,9 +128,11 @@
 		A16CE71D2A948B77000866CA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A1F02BA52A98DCCB003053FA /* ViewController.swift */,
 				A1BBED752A960B2200125BB5 /* MainViewController.swift */,
 				A16CE70C2A9488E3000866CA /* AllStatistics.swift */,
 				A1BBED692A95063600125BB5 /* StatisticForOneDay.swift */,
+				A1F02BA92A991FD3003053FA /* MilitaryEquipment.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -160,6 +172,8 @@
 				A1BBED632A94F25300125BB5 /* DataAndDayCollectionViewCell.xib */,
 				A1BBED712A95322000125BB5 /* ImageAndTextCollectionViewCell.swift */,
 				A1BBED722A95322000125BB5 /* ImageAndTextCollectionViewCell.xib */,
+				A1F02BAF2A9922D1003053FA /* FiveLabelCollectionViewCell.swift */,
+				A1F02BB02A9922D1003053FA /* FiveLabelCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -167,11 +181,20 @@
 		A1BBED662A94F56100125BB5 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A1F02BA32A98D42B003053FA /* MainViewController + extension.swift */,
 				A1BBED672A94F59100125BB5 /* AllStatistic + extension.swift */,
 				A1BBED6F2A95159100125BB5 /* StatisticForOneDay + extension.swift */,
-				A1F02BA32A98D42B003053FA /* MainViewController + extension.swift */,
+				A1F02BAB2A9920CE003053FA /* MilitaryEquipment + extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		A1F02BB32A9A2AFB003053FA /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				A1F02BB42A9A2B0F003053FA /* Enums.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +258,7 @@
 				A16CE7152A9488E5000866CA /* LaunchScreen.storyboard in Resources */,
 				A16CE7122A9488E5000866CA /* Assets.xcassets in Resources */,
 				A1BBED742A95322000125BB5 /* ImageAndTextCollectionViewCell.xib in Resources */,
+				A1F02BB22A9922D1003053FA /* FiveLabelCollectionViewCell.xib in Resources */,
 				A1BBED652A94F25300125BB5 /* DataAndDayCollectionViewCell.xib in Resources */,
 				A16CE7102A9488E3000866CA /* Main.storyboard in Resources */,
 			);
@@ -248,23 +272,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1BBED5C2A94EFD800125BB5 /* CollectionView.swift in Sources */,
+				A1F02BA62A98DCCB003053FA /* ViewController.swift in Sources */,
 				A1BBED682A94F59100125BB5 /* AllStatistic + extension.swift in Sources */,
 				A1BBED642A94F25300125BB5 /* DataAndDayCollectionViewCell.swift in Sources */,
 				A16CE7202A948BA7000866CA /* NetworkManager.swift in Sources */,
-				A1BBED6E2A95093F00125BB5 /* Color.swift in Sources */,
+				A1F02BAC2A9920CE003053FA /* MilitaryEquipment + extension.swift in Sources */,
 				A1BBED572A94E8D900125BB5 /* RussiaLossesEquipmentCorrection.swift in Sources */,
 				A1F02BA42A98D42B003053FA /* MainViewController + extension.swift in Sources */,
 				A1BBED702A95159100125BB5 /* StatisticForOneDay + extension.swift in Sources */,
 				A1BBED762A960B2200125BB5 /* MainViewController.swift in Sources */,
 				A16CE70D2A9488E3000866CA /* AllStatistics.swift in Sources */,
+				A1F02BAA2A991FD3003053FA /* MilitaryEquipment.swift in Sources */,
 				A1BBED6A2A95063600125BB5 /* StatisticForOneDay.swift in Sources */,
 				A16CE7232A948D3B000866CA /* RussiaLossesPersonnel.swift in Sources */,
 				A16CE7092A9488E3000866CA /* AppDelegate.swift in Sources */,
 				A16CE7252A94A63A000866CA /* RussiaLossesEquipment.swift in Sources */,
 				A16CE70B2A9488E3000866CA /* SceneDelegate.swift in Sources */,
+				A1F02BB12A9922D1003053FA /* FiveLabelCollectionViewCell.swift in Sources */,
 				A1BBED592A94E8E800125BB5 /* RussiaLossesEquipmentOryx.swift in Sources */,
 				A1BBED732A95322000125BB5 /* ImageAndTextCollectionViewCell.swift in Sources */,
 				A1BBED782A9669B100125BB5 /* TemporaryFile.swift in Sources */,
+				A1F02BB52A9A2B0F003053FA /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

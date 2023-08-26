@@ -19,15 +19,26 @@ class CollectionView: UICollectionView {
     
     func setupCollectionView() -> UICollectionView {
         let layout = UICollectionViewFlowLayout()
-        let collectionView = UICollectionView(frame: frame, collectionViewLayout: layout)
-        collectionView.register(.init(nibName: "DataAndDayCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "DataAndDayCollectionViewCell")
-        collectionView.register(.init(nibName: "ImageAndTextCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ImageAndTextCollectionViewCell")
+        let collectionView = UICollectionView(frame: frame,
+                                              collectionViewLayout: layout)
+        
+        collectionView.register(.init(nibName: "DataAndDayCollectionViewCell",
+                                      bundle: nil),
+                                forCellWithReuseIdentifier: "DataAndDayCollectionViewCell")
+        collectionView.register(.init(nibName: "ImageAndTextCollectionViewCell",
+                                      bundle: nil),
+                                forCellWithReuseIdentifier: "ImageAndTextCollectionViewCell")
+        collectionView.register(.init(nibName: "FiveLabelCollectionViewCell",
+                                      bundle: nil),
+                                forCellWithReuseIdentifier: "FiveLabelCollectionViewCell")
         let selectedColor: MyColors = .collectionView
         collectionView.backgroundColor = selectedColor.color
+        
         guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { fatalError() }
         layout.minimumInteritemSpacing = 1
         layout.minimumLineSpacing = 2
         layout.scrollDirection = .vertical
+        
         return collectionView
     }
 }

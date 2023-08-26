@@ -1,11 +1,15 @@
 //
-//  Color.swift
+//  Enums.swift
 //  TestTaskMacPaw
 //
-//  Created by Дмитро Сегейда on 22.08.2023.
+//  Created by Дмитро Сегейда on 26.08.2023.
 //
 
 import UIKit
+
+enum TrueOrFalse {
+    case textBoldTrue, textBoldFalse
+}
 
 enum MyColors {
     case superViewBackgroundColor
@@ -23,3 +27,4 @@ enum MyColors {
         }
     }
 }
+

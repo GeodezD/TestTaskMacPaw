@@ -23,15 +23,18 @@ class ImageAndTextCollectionViewCell: UICollectionViewCell {
         imageView.image = UIImage(named: imageName)
     }
     
-    func setLabel(with text: String, label: UILabel, font: CGFloat = 16, bold: Bool = false) {
+    func setLabel(with text: String,
+                  font: CGFloat = 16,
+                  bold: TrueOrFalse) {
         label.text = text
         label.textAlignment = .center
-        if bold {
+        
+        if bold == .textBoldTrue{
             label.font = .boldSystemFont(ofSize: font)
         } else {
             label.font = .systemFont(ofSize: font)
         }
+        
         label.sizeToFit()
     }
-    
 }

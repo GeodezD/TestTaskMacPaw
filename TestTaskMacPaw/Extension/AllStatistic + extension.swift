@@ -20,14 +20,28 @@ extension AllStatistics: UICollectionViewDelegate, UICollectionViewDataSource, U
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DataAndDayCollectionViewCell", for: indexPath) as? DataAndDayCollectionViewCell
         guard let cell else {fatalError()}
         
+        let selectedColor: MyColors = .colorCell
+        cell.backgroundColor = selectedColor.color
+        cell.layer.cornerRadius = 20
+        
         if let dataEquipment  {
-            cell.setLabel(with: "Statistics for", label: cell.labelStatisttic, font: 16, bold: false)
-            cell.setLabel(with: "Date: \(dataEquipment[indexPath.item].date)", label: cell.labelDate, font: 18, bold: false)
-            cell.setLabel(with: "Day: \(dataEquipment[indexPath.item].day)", label: cell.labelDays, font: 25, bold: true)
+            cell.setLabel(with: "Statistics for",
+                          label: .labelStatisttic,
+                          font: 16,
+                          bold: .textBoldFalse)
+            cell.setLabel(with: "Date: \(dataEquipment[indexPath.item].date)",
+                          label: .labelDate,
+                          font: 18,
+                          bold: .textBoldFalse)
+            cell.setLabel(with: "Day: \(dataEquipment[indexPath.item].day)",
+                          label: .labelDays,
+                          font: 25,
+                          bold: .textBoldTrue)
             let selectedColor: MyColors = .colorCell
             cell.backgroundColor = selectedColor.color
             return  cell
         }
+        
         return cell
     }
     
@@ -60,9 +74,7 @@ extension AllStatistics: UICollectionViewDelegate, UICollectionViewDataSource, U
             for element in setWithNil {
                 nextPage.dataDictionaryEquipment[element] = nil
             }
-            
         }
-        
         present(nextPage, animated: true)
     }
     

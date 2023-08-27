@@ -118,6 +118,7 @@
 		A16CE71C2A948B69000866CA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				A1BBED6D2A95093F00125BB5 /* Color.swift */,
 				A16CE7082A9488E3000866CA /* AppDelegate.swift */,
 				A16CE70A2A9488E3000866CA /* SceneDelegate.swift */,
 				A16CE70E2A9488E3000866CA /* Main.storyboard */,

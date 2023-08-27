@@ -71,10 +71,6 @@ struct RussiaLossesEquipment: Codable {
                                           "directionOfGreatestLosses" : directionOfGreatestLosses,
                                           "specialEquipment" : specialEquipment]
         
-//        let nonNilDataDictionary: [String : Any] = dataArray.filter { (_, value) in
-//            return value != nil
-//        } as [String : Any]
-        
         var nonNilDataDictionary: [String : Any] = [ : ]
         for (key, value) in dataDictionary {
             if value != nil {

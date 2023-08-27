@@ -11,7 +11,6 @@
 		A16CE70B2A9488E3000866CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CE70A2A9488E3000866CA /* SceneDelegate.swift */; };
 		A16CE70D2A9488E3000866CA /* AllStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CE70C2A9488E3000866CA /* AllStatistics.swift */; };
 		A16CE7102A9488E3000866CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16CE70E2A9488E3000866CA /* Main.storyboard */; };
-		A16CE7122A9488E5000866CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16CE7112A9488E5000866CA /* Assets.xcassets */; };
 		A16CE7152A9488E5000866CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16CE7132A9488E5000866CA /* LaunchScreen.storyboard */; };
 		A16CE7202A948BA7000866CA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CE71F2A948BA7000866CA /* NetworkManager.swift */; };
 		A16CE7232A948D3B000866CA /* RussiaLossesPersonnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CE7222A948D3B000866CA /* RussiaLossesPersonnel.swift */; };
@@ -44,7 +43,6 @@
 		A16CE70A2A9488E3000866CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A16CE70C2A9488E3000866CA /* AllStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStatistics.swift; sourceTree = "<group>"; };
 		A16CE70F2A9488E3000866CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A16CE7112A9488E5000866CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A16CE7142A9488E5000866CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A16CE7162A9488E5000866CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A16CE71F2A948BA7000866CA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 				A16CE7082A9488E3000866CA /* AppDelegate.swift */,
 				A16CE70A2A9488E3000866CA /* SceneDelegate.swift */,
 				A16CE70E2A9488E3000866CA /* Main.storyboard */,
-				A16CE7112A9488E5000866CA /* Assets.xcassets */,
 				A16CE7132A9488E5000866CA /* LaunchScreen.storyboard */,
 			);
 			path = Resource;

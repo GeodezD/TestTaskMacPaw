@@ -54,8 +54,7 @@ extension StatisticForOneDay: UICollectionViewDelegate, UICollectionViewDataSour
                                                bold: .textBoldFalse)
                     return cellImageWithText
                 }
-            case indexPath.item:
-//            case indexPath.item where indexPath.item != 0:
+            case indexPath.item where indexPath.item != 0:
                 let key = keysArrayDataDictionaryEquipment[indexPath.item - 2]
                 if let element = dataDictionaryEquipment[key], let name = imageNameDictionary[key]  {
                     cellImageWithText.setImage(imageName: "\(name)")

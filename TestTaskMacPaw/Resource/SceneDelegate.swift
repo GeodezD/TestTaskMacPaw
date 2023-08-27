@@ -22,8 +22,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         navigationController.navigationBar.tintColor = .black
         navigationController.setNavigationBarHidden(false, animated: true)
         window?.makeKeyAndVisible()
-        
-        navigationController.navigationBar.tintColor = .black
         let selectedColor: MyColors = .superViewBackgroundColor
         window?.backgroundColor = selectedColor.color
         audioPlayer.playAudio()

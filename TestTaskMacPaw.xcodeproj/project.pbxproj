@@ -16,7 +16,6 @@
 		A16CE7202A948BA7000866CA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CE71F2A948BA7000866CA /* NetworkManager.swift */; };
 		A16CE7232A948D3B000866CA /* RussiaLossesPersonnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CE7222A948D3B000866CA /* RussiaLossesPersonnel.swift */; };
 		A16CE7252A94A63A000866CA /* RussiaLossesEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CE7242A94A63A000866CA /* RussiaLossesEquipment.swift */; };
-		A1BBED572A94E8D900125BB5 /* RussiaLossesEquipmentCorrection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED562A94E8D900125BB5 /* RussiaLossesEquipmentCorrection.swift */; };
 		A1BBED592A94E8E800125BB5 /* RussiaLossesEquipmentOryx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED582A94E8E800125BB5 /* RussiaLossesEquipmentOryx.swift */; };
 		A1BBED5C2A94EFD800125BB5 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED5B2A94EFD800125BB5 /* CollectionView.swift */; };
 		A1BBED642A94F25300125BB5 /* DataAndDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBED622A94F25300125BB5 /* DataAndDayCollectionViewCell.swift */; };
@@ -50,7 +49,6 @@
 		A16CE71F2A948BA7000866CA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A16CE7222A948D3B000866CA /* RussiaLossesPersonnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RussiaLossesPersonnel.swift; sourceTree = "<group>"; };
 		A16CE7242A94A63A000866CA /* RussiaLossesEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RussiaLossesEquipment.swift; sourceTree = "<group>"; };
-		A1BBED562A94E8D900125BB5 /* RussiaLossesEquipmentCorrection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RussiaLossesEquipmentCorrection.swift; sourceTree = "<group>"; };
 		A1BBED582A94E8E800125BB5 /* RussiaLossesEquipmentOryx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RussiaLossesEquipmentOryx.swift; sourceTree = "<group>"; };
 		A1BBED5B2A94EFD800125BB5 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		A1BBED622A94F25300125BB5 /* DataAndDayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAndDayCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 		A16CE71C2A948B69000866CA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				A1BBED6D2A95093F00125BB5 /* Color.swift */,
 				A16CE7082A9488E3000866CA /* AppDelegate.swift */,
 				A16CE70A2A9488E3000866CA /* SceneDelegate.swift */,
 				A16CE70E2A9488E3000866CA /* Main.storyboard */,
@@ -153,7 +150,6 @@
 			children = (
 				A16CE7222A948D3B000866CA /* RussiaLossesPersonnel.swift */,
 				A16CE7242A94A63A000866CA /* RussiaLossesEquipment.swift */,
-				A1BBED562A94E8D900125BB5 /* RussiaLossesEquipmentCorrection.swift */,
 				A1BBED582A94E8E800125BB5 /* RussiaLossesEquipmentOryx.swift */,
 			);
 			path = Models;
@@ -290,7 +286,6 @@
 				A1BBED642A94F25300125BB5 /* DataAndDayCollectionViewCell.swift in Sources */,
 				A16CE7202A948BA7000866CA /* NetworkManager.swift in Sources */,
 				A1F02BAC2A9920CE003053FA /* LostMilitaryEquipment + extension.swift in Sources */,
-				A1BBED572A94E8D900125BB5 /* RussiaLossesEquipmentCorrection.swift in Sources */,
 				A1F02BA42A98D42B003053FA /* MainMenu + extension.swift in Sources */,
 				A1BBED702A95159100125BB5 /* StatisticForOneDay + extension.swift in Sources */,
 				A1BBED762A960B2200125BB5 /* MainMenu.swift in Sources */,

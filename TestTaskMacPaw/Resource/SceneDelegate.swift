@@ -17,10 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationController = UINavigationController(rootViewController: MainViewController())
         window?.rootViewController = navigationController
         
-//        window?.rootViewController = UINavigationController(
-//            rootViewController: MainViewController()
-//        )
-        
+        navigationController.navigationBar.tintColor = .black
         navigationController.setNavigationBarHidden(false, animated: true)
         window?.makeKeyAndVisible()
         let selectedColor: MyColors = .superViewBackgroundColor

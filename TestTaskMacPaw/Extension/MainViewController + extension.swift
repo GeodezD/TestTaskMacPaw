@@ -19,7 +19,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         let selectedColor: MyColors = .colorCell
         cell.backgroundColor = selectedColor.color
-        cell.imageView.alpha = 0.4
+        cell.imageView.alpha = 0.8
         cell.imageView?.layer.cornerRadius = 10
         cell.layer.cornerRadius = 20
         

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AllStatistics: ViewController {
+final class AllStatistics: ViewController {
     
     var dataEquipment: [RussiaLossesEquipment]?
     var dataPersonnel: [RussiaLossesPersonnel]?

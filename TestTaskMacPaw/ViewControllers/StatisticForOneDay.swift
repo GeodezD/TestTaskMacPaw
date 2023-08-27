@@ -7,10 +7,11 @@
 
 import UIKit
 
-class StatisticForOneDay: ViewController {
+final class StatisticForOneDay: ViewController {
     
     var dataStatisticForOneDayEquipment: RussiaLossesEquipment?
     var dataStatisticForOneDayPersonnel: RussiaLossesPersonnel?
+    
     var dataDictionaryEquipment: [String : Any] = [ : ]
     var keysArrayDataDictionaryEquipment: [String] = []
     var imageNameDictionary: [String : String] = ["aircraft" : "Aircraft",

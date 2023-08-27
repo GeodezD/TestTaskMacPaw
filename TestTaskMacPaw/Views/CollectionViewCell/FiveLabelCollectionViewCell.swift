@@ -11,8 +11,6 @@ enum labelInFiveLabelCollectionViewCell {
     case equipmentOryx, model, manufacturer, lossesTotal, equipmentUA
 }
 
-
-
 class FiveLabelCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var equipmentOryx: UILabel!

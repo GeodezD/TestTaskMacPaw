@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import AVFoundation
 
 final class MainMenu: ViewController {
     
